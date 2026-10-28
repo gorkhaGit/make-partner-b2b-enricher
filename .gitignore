@@ -1,0 +1,9 @@
+.venv
+venv
+storage
+apify_storage
+__pycache__
+*.pyc
+*.zip
+.DS_Store
+.apify

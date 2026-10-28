@@ -1,0 +1,14 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Enriched Make.com Certified Partner & AI Agency Leads Output",
+  "description": "Enriched Make.com Certified, Silver, Gold, and Platinum automation partner records stored in the default dataset.",
+  "type": "object",
+  "properties": {
+    "overview": {
+      "type": "string",
+      "title": "Enriched Make.com Partner B2B Leads",
+      "description": "View all enriched Make.com Certified Partner & AI Automation Agency leads in a structured table.",
+      "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+    }
+  }
+}

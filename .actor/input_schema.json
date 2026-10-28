@@ -1,0 +1,36 @@
+{
+  "title": "Make.com Certified Partner & AI Automation Agency B2B Enricher",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "searchQuery": {
+      "title": "Keyword / App Specialization / Country Filter",
+      "type": "string",
+      "description": "Optional keyword to filter Make.com partners by name, specialized app (e.g., OpenAI, Claude, Airtable, HubSpot, Stripe, Shopify), service, or country.",
+      "editor": "textfield",
+      "default": ""
+    },
+    "partnerTierFilter": {
+      "title": "Make Partner Tier Filter",
+      "type": "string",
+      "description": "Filter agencies by official Make.com certification tier.",
+      "enum": ["all", "Platinum partner", "Gold partner", "Silver partner", "Certified partner"],
+      "default": "all"
+    },
+    "maxItems": {
+      "title": "Max Agencies to Scrape & Enrich",
+      "type": "integer",
+      "description": "Maximum number of enriched Make.com Partner B2B leads to extract.",
+      "default": 25,
+      "minimum": 1,
+      "maximum": 2000
+    },
+    "enrichWebsiteContacts": {
+      "title": "Enrich Verified Emails, Phones & LinkedIn from Agency Websites",
+      "type": "boolean",
+      "description": "Visit each agency's external website and /contact page to extract verified business emails, phone numbers, LinkedIn company page, X/Twitter, and YouTube links.",
+      "default": true
+    }
+  },
+  "required": []
+}

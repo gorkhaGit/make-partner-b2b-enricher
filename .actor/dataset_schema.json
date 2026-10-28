@@ -1,0 +1,52 @@
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "partnerName": { "type": "string", "title": "Partner / Agency Name" },
+      "slug": { "type": "string", "title": "Directory Slug" },
+      "partnerTier": { "type": "string", "title": "Make Partner Tier" },
+      "headquarters": { "type": "string", "title": "Primary Location" },
+      "website": { "type": "string", "title": "Clean Website" },
+      "primaryEmail": { "type": "string", "title": "Primary Verified Email" },
+      "emails": { "type": "array", "title": "Verified Emails", "items": { "type": "string" } },
+      "phones": { "type": "array", "title": "Phone Numbers", "items": { "type": "string" } },
+      "linkedinUrl": { "type": "string", "title": "LinkedIn URL" },
+      "twitterUrl": { "type": "string", "title": "X / Twitter URL" },
+      "youtubeUrl": { "type": "string", "title": "YouTube Channel URL" },
+      "contactPageUrl": { "type": "string", "title": "Contact Page URL" },
+      "appSpecializations": { "type": "array", "title": "App Specializations", "items": { "type": "string" } },
+      "services": { "type": "array", "title": "Automation Services", "items": { "type": "string" } },
+      "locations": { "type": "array", "title": "Countries Served", "items": { "type": "string" } },
+      "languages": { "type": "array", "title": "Languages", "items": { "type": "string" } },
+      "summary": { "type": "string", "title": "Agency Overview" },
+      "profileUrl": { "type": "string", "title": "Make.com Profile URL" },
+      "scrapedAt": { "type": "string", "title": "Scraped At (UTC)" }
+    }
+  },
+  "views": {
+    "overview": {
+      "title": "Enriched Make.com Partner B2B Leads",
+      "transformation": {
+        "fields": [
+          "partnerName",
+          "partnerTier",
+          "headquarters",
+          "website",
+          "primaryEmail",
+          "emails",
+          "phones",
+          "linkedinUrl",
+          "appSpecializations",
+          "services",
+          "locations",
+          "profileUrl"
+        ]
+      },
+      "display": {
+        "component": "table",
+        "properties": {}
+      }
+    }
+  }
+}
